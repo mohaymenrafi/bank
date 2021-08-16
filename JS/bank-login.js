@@ -4,7 +4,7 @@ const userPass = document.querySelector('#user-password')
 
 
 function handleSubmitClick() {
-    if(userEmail.value === 'mohaymen.rafi@gmail.com' && userPass.value === 'secret007'){
+    if(userEmail.value === 'test@test.com' && userPass.value === '007'){
         window.location.href = 'dashboard.html'
     } else{
         alert(`Login info is incorrect!`);
