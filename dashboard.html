@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Your Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-8">Welcome to your <span class="font-semibold text-green-500">Dashboard</span></h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 mt-8 gap-4 w-8/12 mx-auto">
+            <div class="info-box bg-green-500 px-4 py-16 rounded-xl">
+                <h2 class="text-3xl text-center text-white">Deposit</h2>
+                <h3 class="text-5xl text-center text-white mt-4 font-semibold" id="deposit-amount">$<span>1250</span></h3>
+            </div>
+            <div class="info-box bg-blue-500  py-16 px-4 rounded-xl">
+                <h2 class="text-3xl text-center text-white">Withdraw</h2>
+                <h3 class="text-5xl text-center text-white mt-4 font-semibold" id="withdraw-amount">$<span>50</span></h3>
+            </div>
+            <div class="info-box bg-yellow-500  px-4 py-16 rounded-xl">
+                <h2 class="text-3xl text-center text-white">Balance</h2>
+                <h3 class="text-5xl text-center text-white mt-4 font-semibold" id="total-balance">$<span>1200</span></h3>
+            </div>
+        </section>  
+
+        <section class="grid grid-cols-2 gap-4 mt-16 w-8/12 mx-auto">
+            <div class="bg-green-100 px-8 py-16 rounded-xl">
+                <h3 class="text-3xl text-black">Amount to Deposit</h3>
+                <input class="border border-transparent focus:outline-none focus:ring-2 focus:ring-transparent focus:border-transparent rounded w-full p-2 text-lg mt-4" type="number" id="deposit" placeholder="$">
+                <button id="deposit-btn" class="bg-yellow-400 px-8 py-2 mt-4 rounded mx-auto font-semibold hover:bg-pink-500 hover:text-white">Deposit</button>
+                
+            </div>
+            <div class="bg-blue-100 px-8 py-16 rounded-xl">
+                <h3 class="text-3xl text-black">Amount to Withdraw</h3>
+                <input class="border border-transparent focus:outline-none focus:ring-2 focus:ring-transparent focus:border-transparent rounded w-full p-2 text-lg mt-4" type="number" id="withdraw" placeholder="$"> 
+                <button id="withdraw-btn" class="bg-yellow-400 px-8 py-2 mt-4 rounded mx-auto font-semibold hover:bg-blue-500 hover:text-white">Withdraw</button>
+                
+            </div>
+        </section>
+
+    </main>
+
+    
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
