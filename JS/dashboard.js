@@ -39,7 +39,7 @@ function handleWithdrawBtn() {
 depositBtn.addEventListener('click', handleDepositBtn);
 withdrawBtn.addEventListener('click', handleWithdrawBtn);
 
-For keyboard Enter press
+// For keyboard Enter press
 window.addEventListener('keydown', (e) => {
     if(e.key === 'Enter'){
         handleDepositBtn();
