@@ -15,8 +15,8 @@ let totalStarter = parseInt(totalBalance.textContent);
 // Deposit Handle Function & update total
 function handleDepositBtn() {
     if(depositInput.value>0){
-        // depositAmount+=parseFloat(depositInput.value);
-        deposit.textContent = depositAmount + parseFloat(depositInput.value);
+        depositAmount+=parseFloat(depositInput.value);
+        deposit.textContent = depositAmount
         totalStarter+= parseFloat(depositInput.value)
         totalBalance.textContent = totalStarter;
         depositInput.value='';
@@ -39,11 +39,17 @@ function handleWithdrawBtn() {
 depositBtn.addEventListener('click', handleDepositBtn);
 withdrawBtn.addEventListener('click', handleWithdrawBtn);
 
-// For keyboard Enter press
+For keyboard Enter press
 window.addEventListener('keydown', (e) => {
     if(e.key === 'Enter'){
         handleDepositBtn();
-        handleWithdrawBtn();
+        
+    }
+});
+window.addEventListener('keydown', (e) => {
+    if(e.key === 'Enter'){
+        handleWithdrawBtn();;
+        
     }
 });
 
